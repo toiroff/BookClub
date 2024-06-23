@@ -8,6 +8,48 @@
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
     <title>OpenTeam - Find your partners around the world!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: #2d2d3f; /* Dark background color */
+            color: #fff; /* White text color */
+            padding: 20px 0; /* Padding for top and bottom */
+            text-align: center; /* Center-align text */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-links a {
+            color: #a9a9b3; /* Light gray text color */
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+   
 </head>
 
 <body>
@@ -22,8 +64,10 @@
     {% endif %}
 
     {% block content %}
-
+   
+    
     {% endblock content %}
     <script src="{% static 'js/script.js' %}"></script>
+   
 </body>
 </html>
